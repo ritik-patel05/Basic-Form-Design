@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- For maximum usability/accessibility, -->
+    <!--1. Advised to surround each list of related items in a <fieldset>, with a <legend> providing an overall description of the list.
+        2.  Each individual pair of <label>/<input> elements should be contained in its own list item (or similar).  -->
+
+    <!-- 1.  Any checkboxes and radio buttons with the checked attribute on load match the :default pseudo class, even if they are no longer checked.
+    2.  Any that are currently checked match the :checked pseudoclass. -->
+
+    <form action="#" method="POST">
+
+        <fieldset>
+            <legend>Choose all the vegetables you like to eat</legend>
+            <ul>
+                <li>
+                    <label for="carrots">
+                        <input type="checkbox" checked id="carrots" name="carrots" value="carrots">
+                        Carrots
+                    </label>
+                </li>
+                <li>
+                    <label for="peas">
+                        <input type="checkbox" id="peas" name="peas" value="peas">
+                        Peas
+                    </label>
+                </li>
+                <li>
+                    <label for="cabbage">
+                        <input type="checkbox" id="cabbage" name="cabbage" value="cabbage">
+                        Cabbage
+                    </label>
+                </li>
+                <li>
+                    <label for="cauli">
+                        <input type="checkbox" id="cauli" name="cauli" value="cauli">
+                        Cauliflower
+                    </label>
+                </li>
+                <li>
+                    <label for="broc">
+                        <input type="checkbox" id="broc" name="broc" value="broc">
+                        Broccoli
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>What is your favorite meal?</legend>
+            <ul>
+                <li>
+                    <label for="soup">
+                    <input type="radio" checked id="soup" name="meal" value="soup">
+                    Soup</label>
+                </li>
+                <li>
+                    <label for="curry">
+                        <input type="radio" id="curry" name="meal" value="curry">
+                        Curry
+                    </label>
+                </li>
+                <li>
+                    <label for="pizza">
+                        <input type="radio" id="pizza" name="meal" value="pizza">
+                        Pizza
+                    </label>
+                </li>
+                <li>
+                    <label for="tacos">
+                        <input type="radio" id="tacos" name="meal" value="tacos">
+                        Tacos
+                    </label>
+                </li>
+                <li>
+                    <label for="bolognaise">
+                        <input type="radio" id="bolognaise" name="meal"  value="bolognaise">
+                        Bolognaise
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
